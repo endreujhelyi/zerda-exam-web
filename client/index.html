@@ -4,43 +4,38 @@
   <meta charset="UTF-8">
   <title>Exam</title>
 
-  <style>
-    .hide {
-      display: none;
-    }
+  <link href="style.css" type="text/css" rel="stylesheet">
 
-    body {
-      display: flex;
-      flex-direction: column;
-      width: 300px;
-      margin-left: 300px;
-    }
-  </style>
 </head>
 
 
 <body>
 
-  <p>Thank you for visiting our website! To get early access to our planned projects, please fill in the following quick questionnaire.</p>
+  <div class="container">
 
-  <label for="exp">Describe your experience with Green Fox Academy so far</label>
-  <textarea id="exp" name="exp" required></textarea>
+    <p>Thank you for visiting our website! To get early access to our planned projects, please fill in the following quick questionnaire.</p>
 
-
-  <label for="like">On a scale of 1 to 10, how likely are you to recommend Green Fox Academy to a friend?</label>
-  <input id="like" type="number" maxlength="2" required />
-
-  <label for="email">Your email address:</label>
-  <input id="email" type="email" required />
-
-  <button>Klikk</button>
-
-  <span class="hide">loading</span>
+    <label for="exp">Describe your experience with Green Fox Academy so far</label>
+    <textarea id="exp" name="exp" required></textarea>
 
 
-  <ul></ul>
+    <label for="like">On a scale of 1 to 10, how likely are you to recommend Green Fox Academy to a friend?</label>
+    <input id="like" type="number" required />
 
+    <label for="email">Your email address:</label>
+    <input id="email" type="email" required />
+
+    <button>Klikk</button>
+
+    <span class="hide">loading</span>
+
+    <ul>
+      <!-- projects come here -->
+    </ul>
+
+  </div>
 
   <script src="exam.js"></script>
+
 </body>
 </html>

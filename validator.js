@@ -9,14 +9,13 @@ function validator(email, number, feedback) {
   let validFeedback = true;
   let validate = false;
 
-
   for (let i = 0; i < email.length; i++) {
     if (email[i] === '@') {
       validEmail = true;
     }
   }
 
-  if (number > 0 && number <= 10 ) {
+  if (number > 10) {
     validNumber = true;
   }
 

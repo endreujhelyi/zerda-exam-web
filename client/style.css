@@ -1,0 +1,118 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: calibri, arial, sans-serif;
+  background-color: #eee;
+}
+
+
+
+/* MAIN CONTENT, FORM */
+
+.container {
+  margin-top: 4vh;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 1rem;
+  background-color: lightblue;
+  border-radius: 10px;
+  position: relative;
+}
+
+p {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+
+label {
+  margin-top: 10px;
+  margin-bottom: 2px;
+  font-style: italic;
+  color: #555;
+}
+
+textarea {
+  height: 8rem;
+}
+
+textarea,
+input {
+  font-weight: bold;
+  padding: 4px;
+  font-size: 1.3rem;
+}
+
+#like,
+#email {
+  height: 2rem;
+}
+
+#like {
+  width: 20%;
+}
+
+
+
+/* MAIN BUTTON */
+button {
+  align-self: center;
+  margin-top: 1rem;
+  height: 6rem;
+  width: 6rem;
+  background-color: coral;
+  transition: all .3s ease;
+  border: none;
+  border-radius: 50%;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222;
+}
+
+button:hover {
+  background-color: tomato;
+  transform: scale(1.05);
+}
+
+button:focus {
+  outline: none;
+  transform: scale(1);
+}
+
+
+
+/* SECRET LIST*/
+
+ul {
+  background: #000;
+  position: absolute;
+  right: -280px;
+  border-radius: 10px;
+}
+
+li {
+  color: #fff;
+  font-size: 1.2rem;
+  list-style-type: disc;
+  margin: 1rem;
+  margin-left: 0;
+}
+
+.hide {
+  display: none;
+}
