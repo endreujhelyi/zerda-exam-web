@@ -1,0 +1,19 @@
+{
+  "name": "zerda_exam",
+  "version": "1.0.0",
+  "description": "### Getting Started  - Fork this repository under your own account  - Clone the forked repository to your computer  - Commit your progress frequently and with descriptive commit messages  - All your answers and solutions should go in this repository",
+  "main": "client/exam.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greenfox-academy/zerda-exam-web.git"
+  },
+  "author": "me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/greenfox-academy/zerda-exam-web/issues"
+  },
+  "homepage": "https://github.com/greenfox-academy/zerda-exam-web#readme"
+}
