@@ -15,7 +15,7 @@ function validator(email, number, feedback) {
     }
   }
 
-  if (number > 10) {
+  if (number >= 10) {
     validNumber = true;
   }
 
