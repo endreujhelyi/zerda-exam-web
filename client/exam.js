@@ -9,12 +9,12 @@ var list = document.querySelector('ul');
 
 
 
-// server request
+// server post request
 button.addEventListener('click', function () {
   loading.classList.remove('hide');
 
   var xhr = new XMLHttpRequest();
-  xhr.open('POST', 'http://localhost:3000/exam', true);
+  xhr.open('POST', 'http://localhost:3000/exam/', true);
   xhr.setRequestHeader('Content-Type', 'application/json');
   xhr.send(JSON.stringify({
     "feedback": "stellar experience with stupendous people. simply perfect",
@@ -34,3 +34,22 @@ button.addEventListener('click', function () {
     }
   }
 });
+
+
+
+// server get requestvar httpRequest = new XMLHttpRequest();
+xhr.open('GET', 'http://localhost:3000/exam', true);
+xhr.send(null);
+xhr.onreadystatechange = function () {
+  if (xhr.readyState === XMLHttpRequest.DONE) {
+      if (xhr.status === 200) {
+        var decodedList = JSON.parse(xhr.responseText).all;
+        decodedList.forEach(function(item){
+          list.innerHTML += '<li>' + item + '</li>';
+        });
+        loading.classList.add('hide');
+      } else {
+        alert('There was a problem with the request.');
+      }
+    }
+};
