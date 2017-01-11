@@ -20,7 +20,7 @@ function validator(email, number, feedback) {
   }
 
   let kindWords = 0;
-  let userWords = feedback.split(' ');
+  const userWords = feedback.split(' ');
 
   for (let i = 0; i < userWords.length; i++) {
     niceWords.map(function(word) {
