@@ -6,7 +6,7 @@ const niceWords = ["amazing", "awesome", "blithesome", "excellent", "fabulous", 
 function validator(email, number, feedback) {
   let validEmail = false;
   let validNumber = false;
-  let validFeedback = true;
+  let validFeedback = false;
   let validate = false;
 
   for (let i = 0; i < email.length; i++) {
